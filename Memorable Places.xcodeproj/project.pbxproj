@@ -14,6 +14,8 @@
 		843CD3D51F2F3E9100BE3E13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843CD3D31F2F3E9100BE3E13 /* LaunchScreen.storyboard */; };
 		843CD3E01F2F3E9100BE3E13 /* Memorable_PlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CD3DF1F2F3E9100BE3E13 /* Memorable_PlacesTests.swift */; };
 		843CD3EB1F2F3E9100BE3E13 /* Memorable_PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CD3EA1F2F3E9100BE3E13 /* Memorable_PlacesUITests.swift */; };
+		845046781F30A1A1005F5B7E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845046771F30A1A1005F5B7E /* PlacesViewController.swift */; };
+		84F101DA1F31FB10000D1093 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F101D91F31FB10000D1093 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		843CD3E61F2F3E9100BE3E13 /* Memorable PlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memorable PlacesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843CD3EA1F2F3E9100BE3E13 /* Memorable_PlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memorable_PlacesUITests.swift; sourceTree = "<group>"; };
 		843CD3EC1F2F3E9100BE3E13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845046771F30A1A1005F5B7E /* PlacesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		84F101D91F31FB10000D1093 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F101DA1F31FB10000D1093 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,7 @@
 				843CD3DE1F2F3E9100BE3E13 /* Memorable PlacesTests */,
 				843CD3E91F2F3E9100BE3E13 /* Memorable PlacesUITests */,
 				843CD3C81F2F3E9100BE3E13 /* Products */,
+				84F101D81F31FB0F000D1093 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +105,7 @@
 			children = (
 				843CD3CA1F2F3E9100BE3E13 /* AppDelegate.swift */,
 				843CD3CC1F2F3E9100BE3E13 /* ViewController.swift */,
+				845046771F30A1A1005F5B7E /* PlacesViewController.swift */,
 				843CD3CE1F2F3E9100BE3E13 /* Main.storyboard */,
 				843CD3D11F2F3E9100BE3E13 /* Assets.xcassets */,
 				843CD3D31F2F3E9100BE3E13 /* LaunchScreen.storyboard */,
@@ -123,6 +130,14 @@
 				843CD3EC1F2F3E9100BE3E13 /* Info.plist */,
 			);
 			path = "Memorable PlacesUITests";
+			sourceTree = "<group>";
+		};
+		84F101D81F31FB0F000D1093 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F101D91F31FB10000D1093 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845046781F30A1A1005F5B7E /* PlacesViewController.swift in Sources */,
 				843CD3CD1F2F3E9100BE3E13 /* ViewController.swift in Sources */,
 				843CD3CB1F2F3E9100BE3E13 /* AppDelegate.swift in Sources */,
 			);
@@ -503,6 +519,7 @@
 				843CD3F11F2F3E9100BE3E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843CD3F21F2F3E9100BE3E13 /* Build configuration list for PBXNativeTarget "Memorable PlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +528,7 @@
 				843CD3F41F2F3E9100BE3E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843CD3F51F2F3E9100BE3E13 /* Build configuration list for PBXNativeTarget "Memorable PlacesUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +537,7 @@
 				843CD3F71F2F3E9100BE3E13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
